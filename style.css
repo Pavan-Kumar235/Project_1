@@ -1,0 +1,225 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(350deg, 
+        black,
+        rgb(17, 59, 54),
+        #2e96d2,
+        rgb(19, 90, 69)
+    );
+}
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(17, 59, 54);
+    box-shadow: 0px 0px 30px rgb(17, 59, 54);
+    z-index: 1000;
+}
+header h1 {
+    margin-left: 70px;
+    color: rgb(8, 199, 8);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    animation: port 1s ease forwards;
+}
+@keyframes port {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+header ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 40px;
+    font-size: 25px;
+    margin-right: 70px;
+    animation: menu 1s ease forwards;
+}
+@keyframes menu {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+header ul a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul a {
+    text-decoration: none;
+    color: rgb(8, 199, 8);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    transition: 0.3s;
+}
+header ul a:hover {
+    color: white;
+    text-shadow: 0px 0px 50px white;
+    transform: scale(1.1);
+}
+
+#about-me {
+    padding: 100px 0px 0px 0px;
+    display: flex;
+    color: rgb(42, 41, 41);
+    transition: 1.5s;
+}
+#about-me .name-about {
+    width: 80%;
+    padding: 100px 50px 0px 70px;
+}
+#about-me .name-about h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#about-me .name-about h2 {
+    font-size: 50px;
+    color: rgb(34, 33, 6);
+}
+#about-me .name-about p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#about-me .profile-picture {
+    width: 20%;
+    padding: 0px 70px 0px 200px;
+    display: flex;
+    justify-content: end;
+}
+#about-me .profile-picture img {
+    width: 340px;
+    height: 453px;
+    background-image: url('https://content.mycutegraphics.com/graphics/fun/single-big-bubble.png');
+    background-size: 340px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#education {
+    padding: 65px 70px 50px 70px;
+    transition: 1.5s;
+}
+#education .education-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#education .education-1 .edu {
+    background-color: rgb(17, 59, 54);
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 25px black;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#education .education-1 .edu img {
+    width: 100%;
+    border-radius: 7px;
+}
+#education .education-1 .edu h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    color: rgb(8, 199, 8);
+    font-weight: 500;
+    text-shadow: 0px 0px 25px black;
+}
+#education .education-1 .edu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(8, 199, 8);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+#education .education-1 .edu:hover {
+    transform: scale(1.1);
+    box-shadow: 15px 15px 25px green;
+}
+
+#skills {
+    padding: 90px 70px 50px 70px;
+    transition: 1.5s;
+}
+#skills .skills-1 {
+    display: flex;
+    justify-content: space-between ;
+}
+#skills .skills-1 .skill {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 30px black;
+    background-color: rgb(17, 59, 54);
+    color: rgb(8, 199, 8);
+    cursor: pointer;
+    transition: 0.3s;
+}
+#skills .skills-1 .skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 50px rgb(12, 156, 12);;
+}
+
+#contact {
+    margin-top: 70px;
+    padding: 0px 70px 70px 70px;
+    transition: 1.5s;
+}
+#contact .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(12, 156, 12);
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+#contact .contact-content .social-media {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+#contact .contact-content img {
+    height: 35px;
+    transition: 0.3s;
+}
+#contact .contact-content .social-media img:hover {
+    transform: scale(1.5);
+    filter: drop-shadow(0px 0px 10px rgb(13, 225, 13));
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+}
